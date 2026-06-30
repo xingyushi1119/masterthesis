@@ -5,8 +5,7 @@ Master's thesis code. Tests whether daily news sentiment predicts
 next-period excess returns for a universe of US technology stocks, after
 controlling for standard risk factors.
 
-**Essay:**
-https://github.com/xingyushi1119/masterthesis/edit/main/README.md#:~:text=Master_thesis_XingyuShi_xs2557
+**Full thesis (PDF):** [Master_thesis_XingyuShi_xs2557.pdf](Master_thesis_XingyuShi_xs2557.pdf)
 
 **Headline finding:** once you control for the Fama–French 6 factors and firm
 characteristics, the main sentiment effect is statistically **insignificant**
@@ -29,7 +28,7 @@ license and cannot be redistributed:
 | CRSP daily (via WRDS) | Returns, prices, the panel with FF6 + firm controls | WRDS / CRSP |
 
 To run the pipeline, place the source files in `data/` (see paths in
-`src/config.py`) or point `THESIS_DATA_DIR` at wherever they live:
+`config.py`) or point `THESIS_DATA_DIR` at wherever they live:
 
 ```bash
 export THESIS_DATA_DIR=/path/to/licensed/data
@@ -67,7 +66,7 @@ is the cleaner one; weekly is reported as a secondary frequency.
 
 ## Pipeline
 
-Run in order; each script reads paths from `src/config.py`.
+Run in order; each script reads paths from `config.py`.
 
 | Step | Script | Output |
 |---|---|---|
@@ -79,7 +78,6 @@ Run in order; each script reads paths from `src/config.py`.
 
 ```bash
 pip install -r requirements.txt
-cd src
 python 01_build_sentiment_indices.py
 python 02_merge_sentiment_to_panel.py
 python 03_run_regressions.py

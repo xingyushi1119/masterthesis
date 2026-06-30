@@ -4,7 +4,9 @@
 Master's thesis code. Tests whether daily news sentiment predicts
 next-period excess returns for a universe of US technology stocks, after
 controlling for standard risk factors.
-Essay：https://github.com/xingyushi1119/masterthesis/edit/main/README.md#:~:text=Master_thesis_XingyuShi_xs2557
+
+**Essay:**
+https://github.com/xingyushi1119/masterthesis/edit/main/README.md#:~:text=Master_thesis_XingyuShi_xs2557
 
 **Headline finding:** once you control for the Fama–French 6 factors and firm
 characteristics, the main sentiment effect is statistically **insignificant**
